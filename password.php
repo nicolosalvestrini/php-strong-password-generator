@@ -10,6 +10,6 @@
 </head>
 <body>
     <h1>Password Generata</h1>
-    <p><?php echo generatePassword($_GET['lunghezza']); ?></p>
+    <p><?php echo generatePassword($_GET['lunghezza'], $_GET['options']); ?></p>
 </body>
 </html>
