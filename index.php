@@ -1,5 +1,12 @@
 <?php 
-
+    function generatePassword($length) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-=';
+    $password = '';
+    for ($i = 0; $i < $length; $i++) {
+        $password .= $characters[random_int(0, strlen($characters) - 1)];
+    }
+    return $password;
+}
 
 ?>
 <!DOCTYPE html>
@@ -18,6 +25,9 @@
         <label for="lunghezza">Lunghezza password:</label>
         <input type="number" name="lunghezza" id="lunghezza" min="1" max="100" required>
         <button type="submit">Genera</button>
+    </form>
+
+    
     
 </body>
 </html>

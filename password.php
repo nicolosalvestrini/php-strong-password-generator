@@ -1,3 +1,6 @@
+<?php
+ include_once 'functions.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,6 @@
 </head>
 <body>
     <h1>Password Generata</h1>
-
-    <p><?php echo $_GET['lunghezza']; ?></p>
+    <p><?php echo generatePassword($_GET['lunghezza']); ?></p>
 </body>
 </html>
