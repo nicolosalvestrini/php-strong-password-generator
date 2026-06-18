@@ -1,4 +1,6 @@
 <?php 
+ if (isset($_GET['lunghezza']) && isset($_GET['options'])) {
+    
     function generatePassword($length, $options) {
     $lowercase = 'abcdefghijklmnopqrstuvwxyz';
     $uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -24,5 +26,7 @@
     }
     return $password;
 }
+
+ }
 
 ?>
